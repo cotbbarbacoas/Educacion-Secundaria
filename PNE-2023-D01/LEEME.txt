@@ -1,0 +1,10 @@
+DIURNA ORDINARIA 01-2023
+
+35 preguntas de selección única, tres opciones, gráficas SVG redibujadas y 35 soluciones.
+Mantiene el formato, temporizador de 3 horas, áreas y resultados de la plantilla actual.
+
+ESTADO: publicado e integrado al receptor y administrador. Secciones 11-1 y 11-2 inicialmente desactivadas.
+El receptor reconoce d01_2023. El administrador incluye resultados, tres áreas y programación por sección.
+
+VERIFICACIÓN: se cotejaron preguntas y figuras con el PDF; las pruebas locales de DOM comprobaron 35 preguntas con 3 opciones, inicio, navegación, contador, formato de tiempo, confirmación de finalizar, resultados 35/35 y 0/35, tres áreas, revisión y reinicio.
+PENDIENTE: revisión completa en navegador y confirmación de envío real al receptor.
