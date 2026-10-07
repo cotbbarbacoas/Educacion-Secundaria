@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#123b70">
-  <title>Colegio de Orientación Tecnológica de Barbacoas · Matemática</title>
+  <title>Colegio de Orientación Tecnológica Barbacoas · Matemática</title>
   <style>
     :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#162b46;background:#f4f7fb}
     *{box-sizing:border-box}[hidden]{display:none!important}body{margin:0}a{color:inherit}
@@ -33,7 +33,7 @@
 </style>
 </head>
 <body>
-  <header><div class="wrap"><img class="school-logo" src="./assets/logo-colegio.jpg" width="132" height="132" alt="Escudo del Colegio de Orientación Tecnológica de Barbacoas"><div class="header-top"><div class="brand">Departamento de Matemáticas</div><a class="admin-link" href="./resultados/">Administrador</a></div><h1>Colegio de Orientación Tecnológica de Barbacoas</h1><p>Educación Secundaria · Exámenes en línea</p></div></header>
+  <header><div class="wrap"><img class="school-logo" src="./assets/logo-colegio.jpg" width="132" height="132" alt="Escudo del Colegio de Orientación Tecnológica Barbacoas"><div class="header-top"><div class="brand">Departamento de Matemáticas</div><a class="admin-link" href="./resultados/">Administrador</a></div><h1>Colegio de Orientación Tecnológica Barbacoas</h1><p>Educación Secundaria · Exámenes en línea</p></div></header>
   <main>
     <section class="intro"><p>En este sitio encontrarás distintas pruebas de práctica para las pruebas estandarizadas.</p><p>El sitio se actualiza constantemente con las nuevas pruebas que se van aplicando.</p></section>
     <div class="tools"><h2>Pruebas disponibles</h2><input id="buscar" type="search" aria-label="Buscar examen" placeholder="Buscar examen…"></div>
@@ -66,7 +66,7 @@
     </div>
     <p id="sin-resultados" class="empty" hidden>No se encontraron exámenes con ese nombre.</p>
   </main>
-  <footer>Colegio de Orientación Tecnológica de Barbacoas · Matemática</footer>
+  <footer>Colegio de Orientación Tecnológica Barbacoas · Matemática</footer>
   <script>const buscar=document.getElementById('buscar');const tarjetas=[...document.querySelectorAll('.card')];buscar.addEventListener('input',()=>{const q=buscar.value.trim().toLocaleLowerCase('es');let visibles=0;tarjetas.forEach(t=>{t.hidden=!t.textContent.toLocaleLowerCase('es').includes(q);if(!t.hidden)visibles++});document.getElementById('sin-resultados').hidden=visibles!==0});</script>
 </body>
 </html>
