@@ -101,3 +101,5 @@ header{background:linear-gradient(125deg,#063745,#147aa1);border-bottom:4px soli
 
 /* Accessible mathematical notation and responsive vector figures. */
 .formula{font-family:Cambria,"Times New Roman",serif;font-size:1.18em;white-space:nowrap}.frac{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;margin:0 .2em;line-height:1.25}.frac>span{display:block;padding:.08em .3em}.frac>span:first-child{border-bottom:1.5px solid currentColor}.overline{text-decoration:overline}.figure svg,[data-fig] svg{display:block;width:100%;max-width:500px;height:auto;margin:12px auto}.choice-content{min-width:0;width:100%}.choice .choice-content svg{max-width:400px;min-width:0}.relation{margin:12px auto;max-width:500px}.practice-note{color:#415b64;font-size:.95rem;line-height:1.5;margin:22px 0 10px}.figure-note{font-size:.83rem;color:#52656d}.availability-note{line-height:1.5}button:focus-visible{outline:3px solid #e4ac20;outline-offset:3px}@media(max-width:600px){.choice{padding:12px 8px}.question{padding:18px 12px}.manual-item{font-size:1rem}.bar>strong{font-size:.93rem}.exam-table{font-size:.85rem}.bar{gap:10px}}
+
+header .bar>strong{color:#fff}
