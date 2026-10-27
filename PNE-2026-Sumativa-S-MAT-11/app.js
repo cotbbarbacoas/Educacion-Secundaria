@@ -2,7 +2,6 @@ const TOTAL=60,SECONDS=3*60*60,EXAM='pne_2026_sumativa_s_mat_11';
 const KEY=ANSWER_KEY;
 const ACCEPTED={};
 const isCorrect=(a,i)=>!!a&&(ACCEPTED[i+1]||KEY[i]).includes(a);
-const BACKEND_READY=false;
 const API='https://script.google.com/macros/s/AKfycbzTbcCEbXGaZgIHfiBo8MExOJ5o8wpPSTuvLgdaGHhRNzuwRCwPeyJy5xHXhy2P518HJQ/exec';
 const LEGACY_API='https://script.google.com/macros/s/AKfycbwtRGWJPNc8n413pPLvQE5ntBUFfJeG2qKJVxhhNG9CM8tlxqXb-j07anfudEV7Zz0y/exec';
 const STORE='pne_2026_sumativa_s_mat_11_v1',$=id=>document.getElementById(id);
@@ -20,7 +19,6 @@ function restore(){try{const s=JSON.parse(localStorage.getItem(STORE)||'null');i
 function uuid(){return crypto.randomUUID?crypto.randomUUID():'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,c=>(Math.random()*16|0).toString(16))}
 function jsonp(op,extra={},onProgress){return ExamConnection.request(API,{op,exam:EXAM,...extra},{onProgress})}
 async function check(){
- if(typeof BACKEND_READY!=='undefined'&&!BACKEND_READY){available=false;$('start').disabled=true;$('retry').hidden=true;$('availability').textContent='Esta prueba aún no está habilitada.';return false;}
  const request=++statusRequest,chosen=$('section').value;
  available=false;$('start').disabled=true;$('retry').hidden=true;$('availability').textContent='Consultando disponibilidad de la prueba…';
  const current=()=>request===statusRequest&&chosen===$('section').value;
