@@ -30,6 +30,9 @@
     @media(max-width:520px){header{padding-bottom:50px}.intro{padding:21px}.tools input{width:100%}.header-top{align-items:flex-start}.admin-link{font-size:.85rem;padding:9px}}
   
 :root{color:#063745;background:#f2f8f7}header{background:linear-gradient(125deg,#063745,#147aa1);border-bottom:5px solid #399f42}header .wrap{position:relative;padding-left:158px;min-height:140px}.school-logo{position:absolute;left:0;top:0;width:132px;height:132px;object-fit:contain;background:white;border-radius:16px;padding:6px}header h1{font-size:clamp(1.6rem,3.5vw,2.7rem);max-width:850px}.brand{color:#fff;font-size:.82rem;letter-spacing:.03em}.admin-link{border-color:#f7c537;background:#063745}.categories{grid-template-columns:minmax(0,1fr)}.card a{background:#126b8d}.card a:hover,.card a:focus-visible{background:#063745}.card:hover{border-color:#399f42}.tag{background:#e6f5e8;color:#256e2d}.tools input:focus-visible{outline:3px solid #f7c537}@media(max-width:600px){header .wrap{padding-left:0}.school-logo{position:static;display:block;width:100px;height:100px;margin-bottom:18px}.header-top{flex-wrap:wrap}header h1{line-height:1.2}}
+
+.card-labels{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.new-exam-badge{display:inline-flex;align-items:center;background:#ffe7a0;color:#674100;border:1px solid #e6bd54;border-radius:99px;padding:7px 11px;font-size:.78rem;font-weight:800;line-height:1.2;white-space:nowrap}
 </style>
 </head>
 <body>
@@ -69,6 +72,42 @@
   </main>
   <footer>Colegio de Orientación Tecnológica Barbacoas · Matemática</footer>
   <script>const buscar=document.getElementById('buscar');const tarjetas=[...document.querySelectorAll('.card')];buscar.addEventListener('input',()=>{const q=buscar.value.trim().toLocaleLowerCase('es');let visibles=0;tarjetas.forEach(t=>{t.hidden=!t.textContent.toLocaleLowerCase('es').includes(q);if(!t.hidden)visibles++});document.getElementById('sin-resultados').hidden=visibles!==0});</script>
+
+  <script>
+  (() => {
+    // The existing catalog is the baseline; newly added exam cards get a badge.
+    const baseline = new Set(["PNE-2023-D01","PNE-2023-D03","PNE-2023-N01","PNE-2023-T01","PNE-2024-D01","PNE-2024-N01","PNE-2024-N03","PNE-2024-T01","PNE-2025-D01","PNE-2025-Ampliacion","PNE-2025-N00","PNE-2025-N01-CINDEA","PNE-2025-T01","PNE-2025-N06","PNE-2024-Diagnostica-D01","PNE-2025-Diagnostica-D01","PNE-2026-Simulacro","PNE-2026-Reprogramacion-Diurna","PNE-2026-Reprogramacion-Nocturna","PNE-2026-Diagnostica-D01","PNE-2026-Sumativa-Nocturna-I-Semestre"]);
+    const storageKey = 'cotb_pruebas_vistas_v1';
+    let seen = new Set();
+    try {
+      const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
+      if (Array.isArray(saved)) seen = new Set(saved.filter(id => typeof id === 'string'));
+    } catch {}
+    document.querySelectorAll('.card').forEach(card => {
+      const link = card.querySelector('a[href]');
+      if (!link) return;
+      const id = new URL(link.href).pathname.split('/').filter(Boolean).pop();
+      if (!id || baseline.has(id) || seen.has(id)) return;
+      const badge = document.createElement('span');
+      badge.className = 'new-exam-badge';
+      badge.textContent = 'Nueva Prueba';
+      const labels = document.createElement('div');
+      labels.className = 'card-labels';
+      const tag = card.querySelector('.tag');
+      if (tag) { tag.before(labels); labels.append(tag); }
+      else card.prepend(labels);
+      labels.append(badge);
+      const markSeen = event => {
+        if (event.type === 'auxclick' && event.button !== 1) return;
+        seen.add(id);
+        try { localStorage.setItem(storageKey, JSON.stringify([...seen])); } catch {}
+        badge.remove();
+      };
+      link.addEventListener('click', markSeen);
+      link.addEventListener('auxclick', markSeen);
+    });
+  })();
+  </script>
 </body>
 </html>
 
