@@ -31,6 +31,7 @@
   
 :root{color:#063745;background:#f2f8f7}header{background:linear-gradient(125deg,#063745,#147aa1);border-bottom:5px solid #399f42}header .wrap{position:relative;padding-left:158px;min-height:140px}.school-logo{position:absolute;left:0;top:0;width:132px;height:132px;object-fit:contain;background:white;border-radius:16px;padding:6px}header h1{font-size:clamp(1.6rem,3.5vw,2.7rem);max-width:850px}.brand{color:#fff;font-size:.82rem;letter-spacing:.03em}.admin-link{border-color:#f7c537;background:#063745}.categories{grid-template-columns:minmax(0,1fr)}.card a{background:#126b8d}.card a:hover,.card a:focus-visible{background:#063745}.card:hover{border-color:#399f42}.tag{background:#e6f5e8;color:#256e2d}.tools input:focus-visible{outline:3px solid #f7c537}@media(max-width:600px){header .wrap{padding-left:0}.school-logo{position:static;display:block;width:100px;height:100px;margin-bottom:18px}.header-top{flex-wrap:wrap}header h1{line-height:1.2}}
 
+.catalog-nav{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}.catalog-nav a{padding:11px 16px;border:1px solid #126b8d;border-radius:10px;text-decoration:none;color:#063745;background:#fff;font-weight:700}.catalog-nav a:hover,.catalog-nav a:focus-visible{background:#e6f5e8;outline-color:#126b8d}.group{scroll-margin-top:24px}.pending-label{margin-top:auto;align-self:flex-start;padding:9px 12px;border-radius:9px;background:#eef2f5;color:#536782;font-size:.9rem;font-weight:700}
 .card-labels{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .new-exam-badge{display:inline-flex;align-items:center;background:#ffe7a0;color:#674100;border:1px solid #e6bd54;border-radius:99px;padding:7px 11px;font-size:.78rem;font-weight:800;line-height:1.2;white-space:nowrap}
 </style>
@@ -38,7 +39,8 @@
 <body>
   <header><div class="wrap"><img class="school-logo" src="./assets/logo-colegio.jpg" width="132" height="132" alt="Escudo del Colegio de Orientación Tecnológica Barbacoas"><div class="header-top"><div class="brand">Departamento de Matemáticas</div><a class="admin-link" href="https://script.google.com/macros/s/AKfycbxW2qb_Kfgl1-RZQ7jkCabxyRkXkY7UqZG12hd-AkUT1OFMmg9CLbydAwGyeaiAZA/exec?plataforma=cotb">Administrador</a></div><h1>Colegio de Orientación Tecnológica Barbacoas</h1><p>Educación Secundaria · Exámenes en línea</p></div></header>
   <main>
-    <section class="intro"><p>En este sitio encontrarás distintas pruebas de práctica para las pruebas estandarizadas.</p><p>El sitio se actualiza constantemente con las nuevas pruebas que se van aplicando.</p></section>
+    <section class="intro"><p>En este sitio encontrarás pruebas de práctica para las pruebas estandarizadas y una sección de Olimpiadas de Matemática.</p><p>El sitio se actualiza constantemente con las nuevas pruebas que se van aplicando.</p></section>
+    <nav class="catalog-nav" aria-label="Secciones de pruebas"><a href="#academica">Secundaria Académica</a><a href="#olimpiadas">Olimpiadas de Matemática</a></nav>
     <div class="tools"><h2>Pruebas disponibles</h2><input id="buscar" type="search" aria-label="Buscar examen" placeholder="Buscar examen…"></div>
     <div class="categories">
       <section class="group" aria-labelledby="academica"><h2 id="academica">Secundaria Académica</h2>
@@ -65,6 +67,15 @@
           <article class="card"><span class="tag">MATEMÁTICA</span><h3>Prueba Nacional Estandarizada · Reprogramación nocturna 2026</h3><p>Nocturna IPEC · CINDEA · CONED · 60 ítems</p><a href="./PNE-2026-Reprogramacion-Nocturna/?nuevo=1">Entrar al examen <span aria-hidden="true">→</span></a></article>
           <article class="card"><span class="tag">MATEMÁTICA</span><h3>Prueba Nacional Estandarizada · Diurna diagnóstica 01-2026</h3><p>Diurna diagnóstica · 44 ítems</p><a href="./PNE-2026-Diagnostica-D01/?nuevo=1">Entrar al examen <span aria-hidden="true">→</span></a></article>
           <article class="card"><span class="tag">MATEMÁTICA</span><h3>Prueba Nacional Estandarizada · Sumativa nocturna · I semestre 2026</h3><p>Nocturna IPEC · CINDEA · CONED · 60 ítems</p><a href="./PNE-2026-Sumativa-Nocturna-I-Semestre/?nuevo=1">Entrar al examen <span aria-hidden="true">→</span></a></article>
+        </div>
+      </section>
+      <section class="group" aria-labelledby="olimpiadas">
+        <h2 id="olimpiadas">Olimpiadas de Matemática</h2>
+        <p>Prácticas de la I Etapa organizadas por nivel. Los exámenes interactivos se incorporarán uno a uno.</p>
+        <div class="grid">
+          <article class="card"><span class="tag">OLIMPIADAS · I NIVEL</span><h3>I Nivel · Séptimo</h3><p>Prácticas para estudiantes de séptimo año.</p><span class="pending-label">Exámenes interactivos en preparación</span></article>
+          <article class="card"><span class="tag">OLIMPIADAS · II NIVEL</span><h3>II Nivel · Octavo y noveno</h3><p>Prácticas para estudiantes de octavo y noveno año.</p><span class="pending-label">Exámenes interactivos en preparación</span></article>
+          <article class="card"><span class="tag">OLIMPIADAS · III NIVEL</span><h3>III Nivel · Décimo y undécimo</h3><p>Prácticas para estudiantes de décimo y undécimo año.</p><span class="pending-label">Exámenes interactivos en preparación</span></article>
         </div>
       </section>
     </div>
