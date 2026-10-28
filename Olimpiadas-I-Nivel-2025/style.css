@@ -108,3 +108,5 @@ header .bar>strong{color:#fff}
 .numeric-answer{display:flex;flex-direction:column;gap:10px;margin:26px 0}.numeric-answer input{font:inherit;font-size:1.4rem;width:min(100%,300px);padding:14px;border:2px solid #7295a0;border-radius:9px;background:white;color:#063745}.numeric-answer input[aria-invalid="true"]{border-color:#b91c1c}.numeric-answer input:focus-visible{outline:3px solid #f7c537;outline-offset:3px}.numeric-answer small{color:#475569;line-height:1.5}.numeric-error{color:#b91c1c!important}.figure svg{max-width:100%;height:auto;display:block;margin:auto}.sequence{font-size:1.1rem;line-height:1.9;overflow-wrap:anywhere}.source-credit{font-size:.86rem;color:#536782;line-height:1.6;margin:28px auto}.practice-intro{line-height:1.6}.manual-item li{margin-bottom:8px}.figure{margin:22px auto}.manual-item .pre p{line-height:1.7}
 
 header{color:white}.review details{margin:12px 0}.review details summary{cursor:pointer;font-weight:650}.review details svg{display:block;width:100%;max-width:440px;height:auto;margin:auto}.review details img{max-width:100%;height:auto}.source-credit{max-width:820px}
+
+.bar-right>span{color:#063745}
