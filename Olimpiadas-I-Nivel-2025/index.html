@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Olimpiadas de Matemática · I Nivel · 2025 · Matemática</title>
+<link rel="stylesheet" href="style.css?v=20261028-1"></head><body>
+<header><div style="display:flex;align-items:center;gap:12px;padding:12px 20px;color:white"><img src="../assets/logo-colegio.jpg" alt="Escudo del colegio" width="52" height="52" style="object-fit:contain;background:white;border-radius:8px"><span>Colegio de Orientación Tecnológica Barbacoas</span></div><div class="bar"><strong>Olimpiadas de Matemática · I Nivel · 2025</strong><div class="bar-right"><span class="mode">Práctica</span><span id="counter">0 / 20 respondidas</span><span id="clock">03:00:00</span></div></div></header>
+<main>
+<section id="welcome" class="card"><h1>Olimpiadas de Matemática · I Nivel · 2025</h1>
+<div class="practice-intro"><p><b>Séptimo año · I Eliminatoria Nacional 2025</b></p><p>Práctica individual con calificación automática y soluciones al finalizar. Las respuestas se conservan en este navegador; este modo no envía notas al docente.</p></div>
+<div class="actions"><button id="start" class="primary">Iniciar práctica</button><button id="resume" hidden>Continuar práctica guardada</button></div>
+
+<div class="instructions"><b>Instrucciones:</b><ul>
+<li>La prueba consta de 20 preguntas: 12 de selección única y 8 de respuesta corta numérica.</li>
+<li>Selecciona una opción o escribe únicamente números, sin espacios, puntos, comas, letras ni unidades.</li>
+<li>Trabaja individualmente. No se permite utilizar calculadora, libros, libretas de notas ni tablas.</li>
+<li>Ten a mano los instrumentos necesarios para escribir y dibujar. En la prueba original no se permiten hojas adicionales.</li>
+<li>Las figuras no necesariamente están a escala.</li>
+<li>Dispones de 3 horas. Puedes avanzar, regresar y cambiar tus respuestas antes de finalizar. Al agotarse el tiempo, se califican las respuestas guardadas.</li>
+<li>El puntaje de esta práctica no determina la clasificación oficial de OLCOMA.</li>
+</ul></div></section>
+<section id="exam" hidden><div class="layout"><div class="card question"><div class="question-heading"><h2 id="qtitle">Ítem 1 de 20</h2><div class="qmeta"><div id="area" class="area-label">Tema: Números y Álgebra</div><span id="qstatus" class="status">Sin responder</span></div></div>
+<div id="context" hidden><p class="context-title">Información para este grupo de ítems</p><div id="contextVector" class="vector"></div></div>
+<div class="source"><div id="questionVector" class="vector"></div></div>
+<p class="figure-note">Las figuras son esquemáticas y no necesariamente están a escala.</p>
+<div class="nav"><button id="prev">← Anterior</button><button id="next" class="primary">Siguiente →</button></div></div>
+<aside class="card sidebar"><h3>Navegación</h3><div id="grid" class="grid"></div><p class="sidebar-count" id="sidebarCount">0 de 20 respondidos</p><button id="finish" class="finish">Finalizar prueba</button></aside></div></section>
+<section id="results" class="card" hidden><div class="eyebrow">Resultados</div><h1>Tu resultado</h1><div class="score" id="score"></div><p id="scorePercent"></p><p id="gradeStatus" class="grade-status" aria-live="polite"></p><div class="totals"><div><b id="correct">0</b><span>Correctas</span></div><div><b id="wrong">0</b><span>Incorrectas</span></div><div><b id="blank">0</b><span>Sin responder</span></div></div><h2>Resultados por tema</h2><p>Los temas se agrupan para ayudarte a repasar; no son categorías oficiales de OLCOMA.</p><div id="areaCharts" class="charts"></div><p>Resultado guardado en este navegador. Esta práctica no envía notas al docente.</p><button type="button" id="reviewBtn" aria-controls="review" aria-expanded="false">Revisar respuestas</button><div id="review" class="review" hidden></div><button id="restart">Iniciar otra práctica</button> <button type="button" id="menuBtn">Regresar al menú de exámenes</button></section>
+<p class="source-credit">Fuente: Olimpiada Costarricense de Matemáticas (OLCOMA), I Eliminatoria Nacional, Nivel I, 2025. Adaptación interactiva para práctica.</p><dialog id="restartDialog"><h2>¿Comenzar desde cero?</h2><p>Se borrarán las respuestas de tu práctica guardada y tendrás tres horas para un nuevo intento.</p><div class="actions"><button id="cancelRestart">Cancelar</button><button id="confirmRestart" class="primary">Comenzar desde cero</button></div></dialog></main><dialog id="finishDialog"><h2>¿Finalizar la prueba?</h2><p id="finishMessage"></p><div class="actions"><button id="cancelFinish">Seguir respondiendo</button><button id="confirmFinish" class="finish">Sí, finalizar</button></div></dialog>
+<script src="manual_figures.js?v=20261028-1"></script><script src="manual_questions.js?v=20261028-1"></script><script src="manual_solutions.js?v=20261028-1"></script><script src="app.js?v=20261028-1"></script></body></html>
+
+
+

@@ -1,0 +1,22 @@
+const SOLUTIONS=[
+  "Debe extraer al menos una bola azul. Para minimizar el resultado, las otras dos deben ser rojas: 10 + 3 − 2 − 2 = 9. Opción C.",
+  "La suma inicial es 1 + 2 + … + 10 = 55. Cada jugada reduce la suma total en 1 y la cantidad de números en 1. Tras 9 jugadas queda 55 − 9 = 46.",
+  "Dana ahorra 84 ÷ 7 = 12 dólares diarios. Nicole ahorra 12 + 5 = 17. Sofía ahorra 3 × 17 = 51 dólares diarios. Opción C.",
+  "En la primera fila ya aparece V; en la segunda columna falta M en esa fila. Por ello, las otras dos casillas de la primera fila deben contener A y R. Ambas alternativas para la estrella permiten completar la cuadrícula. Hay 2 colores posibles. Opción B.",
+  "Las mujeres representan el 35 % y los hombres el 65 %. La diferencia es el 30 % del total: 0,30 × total = 252. Entonces total = 252 ÷ 0,30 = 840.",
+  "Los divisores positivos de 30 son 1, 2, 3, 5, 6, 10, 15 y 30. Hay 8 casos favorables de 30 posibles: 8/30 = 4/15. Opción C.",
+  "En △PQT: ∠PTQ = 180° − 37° − 43° = 100°. Por ángulos suplementarios, ∠XTR = 80°. En △XTR: ∠TXR = 180° − 80° − 35° = 65°. Finalmente, ∠PXR = 180° − 65° = 115°.",
+  "Los 272 estudiantes de la segunda etapa son 2/3 de los que realizaron la primera. En la primera participaron 272 × 3/2 = 408. La inscripción fue 408 ÷ 0,85 = 480 estudiantes. Opción D.",
+  "El lado de ABCD es √49 = 7 cm. El lado largo de EBCF mide 91 ÷ 7 = 13 cm. El lado de AEGI es 7 + 13 = 20 cm. Sus perímetros son 4 × 20 = 80 cm y 2 × (20 + 7) = 54 cm; la diferencia es 26 cm. Opción A.",
+  "El número menos 1 debe ser múltiplo de mcm(2, 3, 5, 7) = 210. El menor de cuatro cifras es 5 × 210 + 1 = 1051. Sus dígitos suman 1 + 0 + 5 + 1 = 7. Opción C.",
+  "mcm(75, 35) = 525 = 3 × 5² × 7. El siguiente múltiplo, 1050, introduce el primo 2 y tiene cuatro divisores primos distintos. El menor que conserva solo los primos 3, 5 y 7 es 3 × 525 = 1575. La suma de sus dígitos es 18. Opción D.",
+  "Los cuadrados tienen lado 16 cm. La suma de los tramos horizontales superiores e inferiores es 2 × 64 = 128 cm. Los costados y los dos escalones verticales suman 2 × 48 + 2 × 16 = 128 cm. Los dos escalones horizontales agregan 16 + 16 = 32 cm. Perímetro: 128 + 128 + 32 = 288 cm.",
+  "Las diagonales del rombo lo dividen en cuatro triángulos de igual área: cada uno mide 5 cm². Por ello, △ABC mide 10 cm². Como BE = AB/2 y △BEC comparte la altura sobre la recta AE, su área es 5 cm². Así, BFCE = △BFC + △BEC = 5 + 5 = 10 cm².",
+  "La hormiga recorre tres lados de cada cuadrado. La suma de los lados sobre la línea punteada es 38 cm; la longitud del recorrido es 3 × 38 = 114 cm.",
+  "Cada bloque tiene volumen 2 × 4 × 6 = 48 unidades cúbicas. El menor cubo se construye con lado 12 = mcm(2, 4, 6). Puede llenarse con 6 × 3 × 2 bloques: 12³ ÷ 48 = 36.",
+  "Sea w el número del vértice izquierdo superior. El lado con 4 y 8 suma w + 12. En el lado izquierdo inferior, w + 1 + v = w + 12, de modo que v = 11. En la base, 11 + 6 + u = w + 12, así que u = w − 5. En el lado inferior derecho, (w − 5) + 2 + X = w + 12. Por tanto, X = 15.",
+  "Cada semicircunferencia tiene radio 3 cm. El área del cuadrado fuera de ambas es 36 − 9π; su mitad inferior mide 18 − 9π/2. El área de △ABP es 6 × 3 ÷ 2 = 9. La región sombreada mide 9 − (18 − 9π/2) = 9π/2 − 9 cm². Opción A.",
+  "Los divisores de 36 se emparejan así: 1 × 36 = 2 × 18 = 3 × 12 = 4 × 9 = 36. Queda el divisor 6. El producto es 6 × 36⁴, por lo que a = 6, b = 4 y a · b = 24. Opción D.",
+  "Como BC = 3BD, el área de △ABC es tres veces la de △ABD. Como AC = 3EC, también es tres veces la de △BCE; por ello, △ABD y △BCE tienen igual área. Al quitarles el triángulo común BDF, la región sombreada DFEC tiene el área de △ABF: 2 × 7 ÷ 2 = 7 unidades cuadradas. Opción A.",
+  "Los primeros resultados son 20, 198, 1976, 19754 y 197532. Las unidades siguen el ciclo 0, 8, 6, 4, 2, de período 5. Como 2025 es múltiplo de 5, corresponde el quinto dígito del ciclo: 2. Opción B."
+];

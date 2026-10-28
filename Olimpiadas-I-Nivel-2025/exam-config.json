@@ -1,0 +1,104 @@
+{
+  "id": "olimpiadas_i_nivel_2025",
+  "title": "Olimpiadas de Matemática · I Nivel · 2025",
+  "total": 20,
+  "durationSeconds": 10800,
+  "key": [
+    "C",
+    "46",
+    "C",
+    "B",
+    "840",
+    "C",
+    "115",
+    "D",
+    "A",
+    "C",
+    "D",
+    "288",
+    "10",
+    "114",
+    "36",
+    "15",
+    "A",
+    "D",
+    "A",
+    "B"
+  ],
+  "answerTypes": [
+    "choice",
+    "number",
+    "choice",
+    "choice",
+    "number",
+    "choice",
+    "number",
+    "choice",
+    "choice",
+    "choice",
+    "choice",
+    "number",
+    "number",
+    "number",
+    "number",
+    "number",
+    "choice",
+    "choice",
+    "choice",
+    "choice"
+  ],
+  "areas": [
+    {
+      "name": "Números y Álgebra",
+      "items": [
+        1,
+        2,
+        3,
+        10,
+        11,
+        18,
+        20
+      ]
+    },
+    {
+      "name": "Razonamiento lógico",
+      "items": [
+        4,
+        16
+      ]
+    },
+    {
+      "name": "Estadística y Probabilidad",
+      "items": [
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "name": "Geometría",
+      "items": [
+        7,
+        9,
+        12,
+        13,
+        14,
+        15,
+        17,
+        19
+      ]
+    }
+  ],
+  "sections": [],
+  "active": false,
+  "backendStatus": "pendiente de registrar y verificar respuestas numéricas en Apps Script",
+  "source": {
+    "exam": "https://drive.google.com/file/d/1VPR_NTPQPAukLEtKoBSL-oevPB1ZfuuV/view",
+    "solutions": "https://drive.google.com/file/d/1417NzYhXi34Fv_8i_IIrBNNBP5RZK3WB/view"
+  },
+  "notes": [
+    "Áreas asignadas para la retroalimentación; no son categorías oficiales del examen.",
+    "12 preguntas de selección única y 8 de respuesta numérica.",
+    "Práctica local disponible; modo con registro desactivado hasta verificar el receptor."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "folder": "https://drive.google.com/drive/folders/1HUKbSELuJvXiRuQAenzWGQujpUhJuCVo",
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-10-28",
   "exams": [
     {
       "path": "PNE-2023-D01",
@@ -291,6 +291,28 @@
       "backend": "pendiente de registrar en Apps Script; inicio desactivado",
       "validation": "60 ítems, 240 opciones, 39 figuras vectoriales y 60 soluciones. Prueba completa de navegación y calificación en navegador con modo local de QA: 60/60; prueba mixta: 1 correcta, 2 incorrectas, 57 en blanco. Envío real pendiente por acceso al administrador.",
       "publication": "Incorporada al menú institucional; pendiente de habilitar después de registrar la prueba en Apps Script."
+    },
+    {
+      "path": "Olimpiadas-I-Nivel-2025",
+      "title": "Olimpiadas de Matemática · I Nivel · 2025",
+      "category": "Olimpiadas de Matemática",
+      "level": "I Nivel (Séptimo)",
+      "year": 2025,
+      "stage": "I Eliminatoria Nacional",
+      "status": "practica_publicada",
+      "items": 20,
+      "choiceItems": 12,
+      "numericItems": 8,
+      "durationSeconds": 10800,
+      "source": {
+        "id": "1VPR_NTPQPAukLEtKoBSL-oevPB1ZfuuV",
+        "url": "https://drive.google.com/file/d/1VPR_NTPQPAukLEtKoBSL-oevPB1ZfuuV/view",
+        "filename": "I Nivel 2025 Enunciado.pdf"
+      },
+      "solutionsSource": "https://drive.google.com/file/d/1417NzYhXi34Fv_8i_IIrBNNBP5RZK3WB/view",
+      "backend": "pendiente de registrar y verificar respuestas numéricas en Apps Script",
+      "validation": "20/20 y caso mixto; formatos numéricos; restauración; cierre por tiempo; reinicio; 8 figuras cotejadas y 20 soluciones verificadas.",
+      "publication": "Práctica local con calificación automática; no envía notas al administrador."
     }
   ],
   "notes": [
